@@ -12,7 +12,7 @@ fun main() = runBlocking {
 }
 
 suspend fun readFiles() {
-    csvReader = CSVReader("large")
+    csvReader = CSVReader("small")
     csvReader.addObserver {
         if (it == ReadStatus.READING) {
             print("Reading Data.")
